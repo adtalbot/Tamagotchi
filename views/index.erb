@@ -1,0 +1,26 @@
+<h1>Congratulations on the birth of your Tamagotchi!</h1>
+
+<form action='/life' method='get'>
+  <p>Pick a name for your new baby!</p>
+  <div class='form-group'>
+    <label for='name'>Name:</label>
+    <input id='name' name='name' type='text'>
+  </div>
+  <p>Your baby is hungry. Time to eat!</p>
+  <div class='form-group'>
+    <label for='food_level'>Number of bottles:</label>
+    <input id='food_level' name='food_level' type='number'>
+  </div>
+  <p>Your baby wants to play! How long is play time?</p>
+  <div class='form-group'>
+    <label for='play_time'>Minutes:</label>
+    <input id='play_time' name='play_time' type=number>
+  </div>
+  <p>Now your baby needs to sleep. How long will you let it sleep?</p>
+  <div class='form-group'>
+    <label for='nap_time'>Minutes:</label>
+    <input id='nap_time' name='nap_time' type=number>
+  </div>
+  <p>Click to see if your baby is still alive.</p>
+  <button type='submit' class='btn button'>Submit</button>
+</form>

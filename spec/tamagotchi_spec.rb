@@ -19,6 +19,8 @@ describe(Tamagotchi) do
       my_pet = Tamagotchi.new('booboo')
       my_pet.time_passes()
         expect(my_pet.food_level()).to(eq(9))
+        expect(my_pet.energy_level()).to(eq(9))
+        expect(my_pet.sleep_level()).to(eq(9))
     end
   end
 
@@ -35,6 +37,12 @@ describe(Tamagotchi) do
     my_pet = Tamagotchi.new('booboo')
     my_pet.birthday.min()
       expect(my_pet.meal_schedule()).to(eq('Not time to eat yet'))
+    end
+  end
+  describe('#final_score') do
+    it('assigns a score to the remaining values of food, sleep, and energy') do
+      my_pet = Tamagotchi.new('booboo')
+      expect(my_pet.final_score()).to(eq(10))
     end
   end
 end

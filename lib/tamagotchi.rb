@@ -28,13 +28,15 @@ class Tamagotchi
 
   define_method(:time_passes) do
     @food_level = @food_level - 1
+    @energy_level = @energy_level - 1
+    @sleep_level = @sleep_level - 1
   end
 
   define_method(:is_alive?) do
-    if @birthday.min < 60
+    if @birthday.min < (60) || @energy_level != (0)
       true
     else
-      false
+      'Your little buddy is dead'
     end
   end
 
@@ -52,7 +54,10 @@ class Tamagotchi
       @energy_level + 1
         'Time for dinner'
     else
-      'Not time to eat yet'
+        'Not time to eat yet'
     end
+  end
+  define_method(:final_score) do
+    @final_score = (@food_level + @energy_level - @sleep_level)
   end
 end
