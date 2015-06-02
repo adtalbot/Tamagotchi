@@ -57,6 +57,7 @@ class Tamagotchi
         'Not time to eat yet'
     end
   end
+  
   define_method(:final_score) do
     @final_score = (@food_level + @energy_level - @sleep_level)
   end
