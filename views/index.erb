@@ -1,26 +1,35 @@
-<h1>Congratulations on the birth of your Tamagotchi!</h1>
+<div class='jumbotron'>
+  <div class='container'>
+    <h1>Congratulations on the birth of your Tamagotchi!</h1>
+  </div>
+</div>
+
 
 <form action='/life' method='get'>
-  <p>Pick a name for your new baby!</p>
-  <div class='form-group'>
-    <label for='name'>Name:</label>
-    <input id='name' name='name' type='text'>
-  </div>
-  <p>Your baby is hungry. Time to eat!</p>
-  <div class='form-group'>
-    <label for='food_level'>Number of bottles:</label>
-    <input id='food_level' name='food_level' type='number'>
-  </div>
-  <p>Your baby wants to play! How long is play time?</p>
-  <div class='form-group'>
-    <label for='play_time'>Minutes:</label>
-    <input id='play_time' name='play_time' type=number>
-  </div>
-  <p>Now your baby needs to sleep. How long will you let it sleep?</p>
-  <div class='form-group'>
-    <label for='nap_time'>Minutes:</label>
-    <input id='nap_time' name='nap_time' type=number>
-  </div>
-  <p>Click to see if your baby is still alive.</p>
-  <button type='submit' class='btn button'>Submit</button>
+  <div class='col-xl-15'>
+    <div class='form-group'>
+      <p>Pick a name for your new baby!</p>
+      <label for='name'>Name:</label>
+      <input id='name' name='name' type='text'>
+    </div>
+      <div class='form-group'>
+        <p>Your baby is hungry. Time to eat!</p>
+        <label for='food_level'>Number of bottles:</label>
+        <input id='food_level' name='food_level' type='number'>
+      </div>
+      <div class='form-group'>
+        <p>Your baby wants to play! How long is play time?</p>
+        <label for='play_time'>Minutes:</label>
+        <input id='play_time' name='play_time' type=number>
+      </div>
+      <div class='form-group'>
+        <p>Now your baby needs to sleep. How long will you let it sleep?</p>
+        <label for='nap_time'>Minutes:</label>
+        <input id='nap_time' name='nap_time' type=number>
+      </div>
+    </div>
+    <div class='button-group'>
+      <p>Click to see if your baby is still alive.</p>
+      <button type='submit' class='btn btn-primary btn-sm'>Submit</button>
+    </div>
 </form>

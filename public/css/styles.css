@@ -1,0 +1,21 @@
+#jumbotron {
+  align: center;
+  padding: 50px;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+.container {
+  color: red;
+  text-align: center;
+}
+
+.form-group {
+  text-align: justify;
+  color: grey;
+}
+
+.button-group {
+  text-align: justify;
+  color:grey;
+}
