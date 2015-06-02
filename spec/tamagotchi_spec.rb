@@ -17,7 +17,14 @@ describe(Tamagotchi) do
     it('decreases the amount of food the Tamagotchi has left by 1') do
       my_pet = Tamagotchi.new('booboo')
       my_pet.time_passes()
-      expect(my_pet.food_level()).to(eq(9))
+        expect(my_pet.food_level()).to(eq(9))
+    end
+  end
+  describe('#is_alive?') do
+    it('is alive if age is less than 15') do
+    my_pet = Tamagotchi.new('booboo')
+    my_pet.age()
+      expect(my_pet.is_alive?()).to(eq(true))
     end
   end
 end
